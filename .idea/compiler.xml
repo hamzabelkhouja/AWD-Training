@@ -9,23 +9,15 @@
         <module name="notification" />
         <module name="config-server" />
         <module name="eureka" />
-        <module name="candidat" />
         <module name="ConfigServer" />
         <module name="Job" />
         <module name="gateway" />
       </profile>
-      <profile name="Annotation profile for job" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-        </processorPath>
-        <module name="job" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="candidat" target="17" />
       <module name="condidature" target="1.5" />
+      <module name="job" target="17" />
       <module name="meeting" target="1.5" />
     </bytecodeTargetLevel>
   </component>
